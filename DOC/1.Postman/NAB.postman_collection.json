@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "13360347-1c49-405c-aa89-72932507af7c",
-		"name": "NAB",
+		"_postman_id": "3a38da16-e6e2-4383-975c-957800d4a9e1",
+		"name": "NAB Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -22,7 +22,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": null,\r\n    \"productName\":\"Macbook M1\",\r\n    \"price\":16000000,\r\n    \"categoryName\": \"Laptop\",\r\n    \"branchName\": \"Apple\",\r\n    \"color\": \"purple\"\r\n}",
+					"raw": "{\r\n    \"id\": null,\r\n    \"productName\":\"Macbook\",\r\n    \"price\":null,\r\n    \"categoryName\": \"Laptop\",\r\n    \"branchName\": \"Apple\",\r\n    \"color\": null\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -51,7 +51,14 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "productName",
+						"value": "ip",
+						"type": "text",
+						"disabled": true
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n}",
