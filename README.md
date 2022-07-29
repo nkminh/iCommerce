@@ -76,4 +76,10 @@
 - Diagram: Open file in "iCommerce/DOC/2.Diagram/diagram_database.PNG" 
   
 - Test-Cases: Open file in "iCommerce/DOC/3.Test-cases/test-case.xlsx"
+- The solution design covers not only the Java backend web services but also all other components of the application
+  as well including the infrastructure:
+   ```sh
+  I will build microservices, Each service is an image docker.
+  Our App can build with multi language like .NET, Java, Nodejs, Go... Each service using different language.
+  ```
 
