@@ -32,6 +32,7 @@
     │   │───1.Postman
     │   │───2.Diagram
     │   │───3.Test-cases
+    │───Dockerfile
     ```
 
 - Use apache maven version 3.6.3 to build all application by typing the following command:
@@ -82,4 +83,14 @@
   I will build microservices, Each service is an image docker.
   Our App can build with multi language like .NET, Java, Nodejs, Go... Each service using different language.
   ```
-
+- Technical patterns: I am using in the project:
+  ```sh
+  Singletons pattern: I'm using the Autowired annotation
+  Factory Method pattern: You can see in the folder services(Interface DetailCartService and ProductService)
+  ```
+- Deployment Docker: build image from Dockerfile, then deploy any environment using docker
+  ```sh
+  docker build -t icommerservice .
+  docker push (to ECR/Docker hub)
+  docker run -it icommerservice (On AWS EC2, docker hub)
+  ```
